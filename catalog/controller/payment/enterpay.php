@@ -200,7 +200,7 @@ class ControllerPaymentEnterpay extends Controller {
 
       foreach ($params as $k => $v) {
         if ($v !== null && $v !== '') {
-                $hmac_params[$k] = urlencode($k) . '=' . urlencode(htmlentities($value, ENT_COMPAT, CHARSET));
+                $hmac_params[$k] = urlencode($k) . '=' . urlencode($v);
         } 
       }
         
