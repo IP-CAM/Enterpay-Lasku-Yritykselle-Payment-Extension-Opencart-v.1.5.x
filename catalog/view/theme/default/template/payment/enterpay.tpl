@@ -1,4 +1,4 @@
-<form action="<?php echo str_replace('&', '&amp;', $action); ?>" method="post" id="payment">
+<form action="<?php echo str_replace('&', '&amp;', $action); ?>" method="post" accept-charset="UTF-8" onsubmit="document.charset = \'UTF-8\'" id="payment">
 <?php
  if($enterpay_debug) { echo 'Payment module in test mode. Request displayed.<br /><br><div style="border: 1px solid #aaaaaa; font-family: courier; font-size: xsmall;">'; }
    foreach($enterpay_params as $key => $value) {
